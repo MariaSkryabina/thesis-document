@@ -1,0 +1,51 @@
+\documentclass[a4paper,article,14pt]{extarticle}
+
+% Подключаем главный пакет со всем необходимым
+\usepackage{spbudiploma_tempora}
+
+% Пакеты по желанию (самые распространенные)
+% Хитрые мат. символы
+\usepackage{euscript}
+% Таблицы
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{tabularx}
+% Картинки (можно встявлять даже pdf)
+\usepackage[pdftex]{graphicx}
+
+\usepackage{amsthm,amssymb, amsmath}
+\usepackage{textcomp}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{gensymb}
+\usepackage{natbib}
+
+%\setcitestyle{authoryear,open={((},close={))}} %Citation-related commands
+
+\begin{document}
+
+% Титульник в файле titlepage.tex
+\input{titlepage.tex}
+\input{titlepage_eng}
+
+% Содержание
+\tableofcontents
+\pagebreak
+% Разделы
+\input{introduction}
+\input{tasks}
+\input{sample}
+\input{completetness}
+\input{data_and_prep}
+\input{classification}
+\input{statistics}
+\input{decomposition}
+\input{res_decomp}
+\input{summary}
+\input{thanksgiving}
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{reference}
+
+
+
+\end{document}
